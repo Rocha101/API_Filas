@@ -6,6 +6,7 @@ const { default: mongoose } = require('mongoose');
 const routes = require('./routes');
 
 const app = express();
+const port = 3001; //
 
 mongoose.connect('mongodb://mongo:RY6GTtFB8ktuEo0aEvzi@containers-us-west-134.railway.app:6816',
     function (err){
@@ -20,6 +21,6 @@ app.use(express.json());
 
 app.use(routes);
 
-app.listen(6816, function() {
+app.listen(port, function() {
     console.log(`rodando na porta: ${port}`);
 });
