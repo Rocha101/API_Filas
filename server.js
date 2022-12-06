@@ -8,7 +8,7 @@ const routes = require('./routes');
 const app = express();
 const port = 3001; //
 
-mongoose.connect('mongodb://0.0.0.0:27017/Filas',
+mongoose.connect('mongodb://177.54.57.170:27017/Filas',
     function (err){
     if (err) {
         console.log(err);
