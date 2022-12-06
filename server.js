@@ -8,7 +8,7 @@ const routes = require('./routes');
 const app = express();
 const port = 3001; //
 
-mongoose.connect('mongodb://177.54.57.170:27017/Filas',
+mongoose.connect('mongodb+srv://rocha:9617@cluster0.jfkfl.mongodb.net/?retryWrites=true&w=majority',
     function (err){
     if (err) {
         console.log(err);
